@@ -7,8 +7,8 @@ const ListOfNames = (props) => {
   // const checkGender = (baby) => setIsActive("Girl");  //className={checkGender(baby)}>
 
   return (
-    <>
-      {props.list.map((baby) => {
+    <div className="section">
+      {props.list.sort((b1, b2) => b1.name.localeCompare(b2.name)).map((baby) => {
         return (
           <div
             key={baby.name}
@@ -20,7 +20,7 @@ const ListOfNames = (props) => {
           </div>
         );
       })}
-    </>
+    </div>
   );
 };
 
