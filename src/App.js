@@ -5,7 +5,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <ListOfNames list={ babyNamesData } />
+      <div className="container">
+        <ListOfNames list={babyNamesData} />
+      </div>
     </div>
   );
 }

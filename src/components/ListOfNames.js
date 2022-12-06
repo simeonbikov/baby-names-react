@@ -7,11 +7,20 @@ const ListOfNames = (props) => {
   // const checkGender = (baby) => setIsActive("Girl");  //className={checkGender(baby)}>
 
   return (
-    <div className="container">
+    <>
       {props.list.map((baby) => {
-        return <div key={baby.name}>{baby.name}</div>;
+        return (
+          <div
+            key={baby.name}
+            className={`${"name-wrapper"} ${
+              baby.sex === "m" ? "blue-bg" : "pink-bg"
+            }`}
+          >
+            {baby.name}
+          </div>
+        );
       })}
-    </div>
+    </>
   );
 };
 
