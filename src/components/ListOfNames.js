@@ -1,10 +1,12 @@
 import React from "react";
-// import babyNamesData from "../data/babyNamesData.json";
-// import "./App.css";
+
+// const makeListForMatchingNames = (event) => {
+//   const query = document.getElementById("showsSearchInput").value;
+//   const filtered = allShows.filter((show) => tvShowMatchesQuery(show, query));
+//   makePageForShows(filtered);
+// };
 
 const ListOfNames = (props) => {
-  // const [Gender, setGender] = useState("Boy");
-  // const checkGender = (baby) => setIsActive("Girl");  //className={checkGender(baby)}>
 
   return (
     <div className="section">
