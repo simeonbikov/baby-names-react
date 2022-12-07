@@ -1,13 +1,8 @@
 import React from "react";
-
-// const makeListForMatchingNames = (event) => {
-//   const query = document.getElementById("showsSearchInput").value;
-//   const filtered = allShows.filter((show) => tvShowMatchesQuery(show, query));
-//   makePageForShows(filtered);
-// };
+// import babyNamesData from "../data/babyNamesData.json";
+// import "./App.css";
 
 const ListOfNames = (props) => {
-
   return (
     <div className="section">
       {props.list.sort((b1, b2) => b1.name.localeCompare(b2.name)).map((baby) => {

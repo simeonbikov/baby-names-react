@@ -1,22 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
-const SearchInput = () => {
-  const [match, setMatch] = useState("");
-
-  const handleChange = (event) => {
-    setMatch(event.target.value);
-  }
-
+const SearchInput = (props) => {
   return (
-    // <form>
       <input
+        id="searchInput"
         type="text"
         placeholder="Search name ..."
-        value={match}
-        onChange={handleChange}
+        onChange={props.handleChange}
       />
-    //   <p>Today I need to remember to... {match}</p>
-    // </form>
   );
 }
 
