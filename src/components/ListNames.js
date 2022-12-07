@@ -1,11 +1,10 @@
 import React from "react";
 // import babyNamesData from "../data/babyNamesData.json";
-// import "./App.css";
 
-const ListOfNames = (props) => {
+const ListNames = (props) => {
   return (
     <div className="section">
-      {props.list.sort((b1, b2) => b1.name.localeCompare(b2.name)).map((baby) => {
+      {props.list.map((baby) => {
         return (
           <div
             key={baby.name}
@@ -21,4 +20,4 @@ const ListOfNames = (props) => {
   );
 };
 
-export default ListOfNames;
+export default ListNames;
