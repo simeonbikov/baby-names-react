@@ -1,5 +1,4 @@
 import React from "react";
-// import babyNamesData from "../data/babyNamesData.json";
 
 const ListNames = (props) => {
   return (

@@ -5,8 +5,9 @@ const SearchInput = (props) => {
       <input
         id="searchInput"
         type="text"
-        placeholder="Search name ..."
+        placeholder="Search for a name ..."
         onChange={props.handleChange}
+        onClick={props.handleClick}
       />
   );
 }
